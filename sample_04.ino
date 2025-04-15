@@ -1,10 +1,8 @@
-// 起動時の1回のみ実行
 void setup() {
   pinMode(16, OUTPUT);
   pinMode(17, OUTPUT);
 }
 
-// 繰り返し実行
 void loop() {
   clockwise1();
   delay(1000);
