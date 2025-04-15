@@ -6,7 +6,7 @@ void setup() {
 }
 
 void loop() {
-  int sensorvalue = analogRead(A2);
+  int sensorValue = analogRead(A2);
   Serial.println(sensorValue);
   int rpm = map(sensorValue, 0, 4095, 0, 255);
   analogWrite(16, rpm);
